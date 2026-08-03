@@ -608,3 +608,18 @@ body {
     display: block;
     margin: 15px auto 0 auto;
 }
+
+.matrix-grid.tshirt-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.matrix-grid.tshirt-grid .showcase-card:nth-child(-n+6) {
+    grid-column: span 4; /* first 6 cards → 3 per row (rows of 3, 3) */
+}
+.matrix-grid.tshirt-grid .showcase-card:nth-child(n+7) {
+    grid-column: span 3; /* remaining 4 cards → 4 per row */
+}
