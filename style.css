@@ -499,43 +499,6 @@ body {
     transform: translateY(0);
 }
 
-/* ==========================================================================
-   RESPONSIVE BREAKPOINTS
-   ========================================================================== */
-@media (max-width: 768px) {
-    .header-inner {
-        flex-direction: column;
-        gap: 1.2rem;
-        padding: 1.2rem;
-    }
-
-    .filter-group {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .editorial-hero {
-        padding: 3rem 1.5rem 2rem 1.5rem;
-    }
-
-    .contact-links-wrapper {
-        flex-direction: column;
-        gap: 1.2rem;
-        align-items: center;
-    }
-
-    .matrix-grid.hair-accessories-grid,
-    .matrix-grid.tshirt-grid {
-        grid-template-columns: 1fr;
-    }
-    .matrix-grid.hair-accessories-grid .showcase-card,
-    .matrix-grid.hair-accessories-grid .showcase-card:nth-child(n+4),
-    .matrix-grid.tshirt-grid .showcase-card:nth-child(-n+6),
-    .matrix-grid.tshirt-grid .showcase-card:nth-child(n+7) {
-        grid-column: span 1;
-    }
-}
-
 /* Custom 3 + 4 layout for Hair Accessories & Jewellery (7 items total) */
 .matrix-grid.hair-accessories-grid {
     display: grid;
@@ -633,4 +596,41 @@ body {
 }
 .matrix-grid.tshirt-grid .showcase-card:nth-child(n+7) {
     grid-column: span 3; /* remaining 4 cards → 4 per row */
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.2rem;
+    }
+
+    .filter-group {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .editorial-hero {
+        padding: 3rem 1.5rem 2rem 1.5rem;
+    }
+
+    .contact-links-wrapper {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+
+    .matrix-grid.hair-accessories-grid,
+    .matrix-grid.tshirt-grid {
+        grid-template-columns: 1fr;
+    }
+    .matrix-grid.hair-accessories-grid .showcase-card,
+    .matrix-grid.hair-accessories-grid .showcase-card:nth-child(n+4),
+    .matrix-grid.tshirt-grid .showcase-card:nth-child(-n+6),
+    .matrix-grid.tshirt-grid .showcase-card:nth-child(n+7) {
+        grid-column: span 1;
+    }
 }
