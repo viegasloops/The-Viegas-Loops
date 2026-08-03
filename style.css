@@ -523,6 +523,17 @@ body {
         gap: 1.2rem;
         align-items: center;
     }
+
+    .matrix-grid.hair-accessories-grid,
+    .matrix-grid.tshirt-grid {
+        grid-template-columns: 1fr;
+    }
+    .matrix-grid.hair-accessories-grid .showcase-card,
+    .matrix-grid.hair-accessories-grid .showcase-card:nth-child(n+4),
+    .matrix-grid.tshirt-grid .showcase-card:nth-child(-n+6),
+    .matrix-grid.tshirt-grid .showcase-card:nth-child(n+7) {
+        grid-column: span 1;
+    }
 }
 
 /* Custom 3 + 4 layout for Hair Accessories & Jewellery (7 items total) */
